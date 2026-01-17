@@ -39,6 +39,16 @@ export default function Home() {
 
   const experiences = [
     {
+      title: 'Software Engineering Intern',
+      company: 'Cantos Inc',
+      location: 'Manhattan, NY',
+      period: 'Dec 2025 - Jan 2026',
+      date: 'Winter 2025-2026',
+      description: 'Engineered a TypeScript POI filtering system for NavVis IVION that streamlined management of 500+ construction site markers through an intuitive sidebar interface',
+      highlights: ['TypeScript POI filtering', 'NavVis IVION integration', 'Real-time filters', 'CSV import workflows'],
+      impact: 'Presented at ACE Winter 2026 Conference, generated industry interest and pilot adoption'
+    },
+    {
       title: 'Research Assistant',
       company: 'UMass Amherst CICS Lab',
       location: 'Amherst, MA',
@@ -89,6 +99,12 @@ export default function Home() {
       description: 'Real-time stock analysis platform with sentiment analysis processing 1K+ posts daily, boosting prediction accuracy by 25%',
       tech: ['Python', 'DistilBERT', 'Polygon.io', 'NLP', 'Yahoo Finance'],
       link: 'https://github.com/Sahilgulati2006/Stock-Analysis-and-Portfolio-Management-System'
+    },
+    {
+      title: 'Code Intelligence Search Engine',
+      description: 'Self-hosted semantic code search platform using AI embeddings for natural language and code-to-code search across indexed repositories',
+      tech: ['FastAPI', 'React', 'TypeScript', 'Qdrant', 'CodeBERT', 'Docker', 'Python'],
+      link: 'https://github.com/Sahilgulati2006/Code-Intelligence-Search-Engine'
     },
     {
       title: 'WildFire Detection System',
@@ -447,7 +463,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:justify-items-center gap-6">
             {projects.map((project, index) => {
               const hasLink = project.link && project.link !== '#';
               const Component = hasLink ? motion.a : motion.div;
